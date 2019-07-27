@@ -1,0 +1,7 @@
+1.IOC 컨테이너 생명주기에 대하여 설명하시오?
+2.InitializingBean, DisposableBean 인터페이스는 무엇이며, 무슨용도로 쓰이는가?
+3.@PostConstruct,@PreDestroy 에 대하여 설명하시오.
+4.스프링에서 객체의 scope 중 sington 과 prototype 에 대하여 설명하시오.
+
+
+ 

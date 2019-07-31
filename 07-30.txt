@@ -1,0 +1,4 @@
+1.pom.xml 에 대하여 설명하시오.
+2.web.xml 에 대하여 설명하시오.
+3.servlet-*.xml 에 대하여 설명하시오.
+4.spring mvc 에서 HelloWorld가 실행되는 순서와 객체들에 대하여 설명하시오.

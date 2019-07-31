@@ -1,0 +1,7 @@
+1.아래의 애너테이션에 대하여 설명하시오.
+@RequestMapping
+@RequestParam
+2.Command 객체에 대하여 설명하시오.
+3.get 방식과 Post 방식에 대하여 설명하시오.
+4.클라이언트에서 넘어오는 정보(id,pw..등등)를 받아내는 방법 3가지에 대하여 말하시오.
+5.Model 객체는 어떨때 쓰이며, ModelAndView 객체는 무엇인가?

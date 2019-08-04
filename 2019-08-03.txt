@@ -1,0 +1,7 @@
+1.RequestMapping 및 form 태그에서 get 과 post 방식 결정 속성자는?
+2.get 방식과 post 방식의 차이는?
+3.@ModelAttribute 에 대하여 설명하시오.
+4.redirect 와 foward 의 차이는? 
+5.page 영역과, request 영역의 차이는?
+
+

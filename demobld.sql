@@ -1,3 +1,5 @@
+select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent from mvc_board order by bGroup desc, bStep asc
+
 <Resource auth="Container" 
           name="jdbc/oracle" 
           driverClassName="oracle.jdbc.driver.OracleDriver" 

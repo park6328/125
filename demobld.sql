@@ -1,3 +1,29 @@
+	<repositories>
+		<repository>
+	    	<id>oracle</id>
+	    	<url>http://www.datanucleus.org/downloads/maven2/</url>
+		</repository>
+	</repositories>
+          
+          
+
+
+                    <!-- 컨넥션 풀을 위한 라이브러리 -->
+		<dependency>
+		    <groupId>commons-dbcp</groupId>
+		    <artifactId>commons-dbcp</artifactId>
+		    <version>1.4</version>
+		</dependency>
+	
+		<!-- 오라클 JDBC 드라이버 -->
+		<!-- https://mvnrepository.com/artifact/oracle/ojdbc6 -->
+		<dependency>
+		    <groupId>oracle</groupId>
+		    <artifactId>ojdbc6</artifactId>
+		    <version>11.2.0.3</version>
+		</dependency>	
+
+
 select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent from mvc_board order by bGroup desc, bStep asc
 
 <Resource auth="Container" 

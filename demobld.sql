@@ -1,4 +1,6 @@
-	<repositories>
+"insert into mvc_board (bId, bName, bTitle, bContent, bGroup, bStep, bIndent) values (mvc_board_seq.nextval, ?, ?, ?, ?, ?, ?)"
+
+<repositories>
 		<repository>
 	    	<id>oracle</id>
 	    	<url>http://www.datanucleus.org/downloads/maven2/</url>

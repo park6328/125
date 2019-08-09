@@ -1,3 +1,7 @@
+//model forward 관련 
+http://blog.naver.com/PostView.nhn?blogId=hyss-jts&logNo=221164446212&categoryNo=13&parentCategoryNo=0
+
+
 insert into board (mId, mWriter, mContent) values (board_seq.nextval, '홍길동','아하 홍길동이다.' );
 
 <?xml version="1.0" encoding="UTF-8"?>

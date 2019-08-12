@@ -1,0 +1,10 @@
+﻿1.마이바티스에서 다중 파라미터 처리방법은?
+2.아래의 소스 코드중 잘못된 곳을 찾으시오.
+	@RequestMapping("/list")
+	public String list(Model model) {
+		IDao dao = sqlSession.getMapper(IDao.class);
+		model.addAttribute("list", dao.listDao());
+		
+		return "redirect:list";
+	}
+3.마이바티스 3종세트는 무엇이며, 3종 세트의 각각의 역활에 대하여 설명하시오.

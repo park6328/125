@@ -1,0 +1,16 @@
+1.게시판 구현중 답변을 달기위한 DB저장및 방법에 대하여 설명하시오.
+2.아래의 소스코드를 보고, 게시판 구현방법의 설계를 그림으로 나타내어 보시오.
+@RequestMapping("/content_view")
+public String content_view(HttpServletRequest request, Model model){
+		System.out.println("content_view()");
+		
+		String bid = request.getParameter("bId");
+		
+		IBDao dao = sqlSession.getMapper(IBDao.class);
+		model.addAttribute("content_view", dao.ContentDao(bid));
+
+		
+		return "content_view";
+	}
+
+3.

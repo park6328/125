@@ -1,3 +1,8 @@
+	<insert id="insertBoard" parameterType="edu.bit.ex.vo.BoardVO" >
+    	insert into mvc_board (bId, bName, bTitle, bContent, bHit, bGroup, bStep, bIndent) values (mvc_board_seq.nextval, #{bName}, #{bTitle}, #{bContent}, 0, mvc_board_seq.currval, 0, 0 )
+	</insert>
+	
+
 1.컨트롤러(Controller) : 클라이언트에서 요청이 들어올 때, 
 해당 요청을 수행할 비즈니스 로직을 제어하는 객체다. 
 

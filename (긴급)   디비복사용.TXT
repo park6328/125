@@ -1,4 +1,12 @@
-		 <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	public String makeQuery(int page) {
+		UriComponents uriComponentsBuilder = UriComponentsBuilder.newInstance().queryParam("page", page) // page = 3
+				.queryParam("perPageNum", cri.getPerPageNum()) // page=3&perPageNum=10
+				.build(); // ?page=3&perPageNum=10
+		return uriComponentsBuilder.toUriString(); // ?page=3&perPageNum=10의 값을 리턴
+	}
+
+
+<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
   		<property name="mapperInterface" value="com.bit.mapper.IBoardMapper" />
   		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>

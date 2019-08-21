@@ -1,0 +1,10 @@
+1.rownum 에 대하여 설명하시오.
+
+2.아래의 sql문의 실행 순서에 대하여 설명하시오?
+SELECT * FROM Scores
+WHERE Score >= 70
+ORDER BY Score
+
+3.게시판 페이징 처리 프로그래밍에 대한 절차는?
+
+

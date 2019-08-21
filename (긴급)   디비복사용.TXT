@@ -1,3 +1,21 @@
+	SELECT * FROM
+	(
+        SELECT
+            A.*,
+            ROWNUM AS RNUM,
+            COUNT(*) OVER() AS TOTCNT
+        FROM
+            (
+                SELECT
+                    *
+                FROM
+                    mvc_board
+                ORDER BY bid desc
+             
+            ) A
+    )WHERE RNUM >= #{startNum} AND RNUM <= #{endNum}
+    ========================================================
+     
      DECLARE
        v_cnt number := 100; 
 	   BEGIN

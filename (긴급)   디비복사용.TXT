@@ -1,3 +1,6 @@
+@Select("select * from login where id = #{id} and pw = #{pw}")
+	public MemberVO logInMember(@Param("id") String id,@Param("pw") String pw);
+
 -- 테이블 생성
 create table login (
 idx number(10) primary key,

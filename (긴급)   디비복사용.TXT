@@ -1,3 +1,17 @@
+
+	<!-- 인터셉터 객체 생성 -->
+	<beans:bean id="boardInterceptor" class="edu.bit.ex.interceptor.BoardInterceptor">
+	</beans:bean>
+	<!-- Interceptor 설정 -->
+	<interceptors>
+	    <interceptor>
+	        <mapping path="/board/**"/>         
+	       <!--  <exclude-mapping path="/resources/**"/> -->
+	        <beans:ref bean="boardInterceptor"/>
+	    </interceptor>
+	</interceptors>
+	
+=====================================================================================
 @Select("select * from login where id = #{id} and pw = #{pw}")
 	public MemberVO logInMember(@Param("id") String id,@Param("pw") String pw);
 

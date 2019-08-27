@@ -1,0 +1,6 @@
+1.interceptor 객체를 생성하기 위한 순서를 나열하시오.
+2.아래의 함수가 실행되는 시점은 언제 인지 설명하시오.  
+	 preHandle() : 
+	 postHanle() : 
+	 afterCompletion() :
+3. interceptor 객체를 등록하는 방법에 대하여 설명하시오.

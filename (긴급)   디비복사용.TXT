@@ -1,4 +1,19 @@
 
+		<!-- MultipartHttpServletRequset -->
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		
+		<!-- fileupload -->
+		<dependency>
+		    <groupId>commons-fileupload</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>1.2.2</version>
+		</dependency>
+		==================================
 	<!-- 인터셉터 객체 생성 -->
 	<beans:bean id="boardInterceptor" class="edu.bit.ex.interceptor.BoardInterceptor">
 	</beans:bean>

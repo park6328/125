@@ -1,4 +1,16 @@
-
+	<!-- MultipartResolver 설정 -->
+    <beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <beans:property name="maxUploadSize" value="100000000" />
+        <beans:property name="maxInMemorySize" value="100000000" />
+    </beans:bean>
+	
+	<!-- 파일업로드를 위한 디렉토리 설정 -->
+	
+	<!-- String uploadPath = new String("e:/uplaod"); -->
+	<beans:bean id="uploadPath" class="java.lang.String">
+		<beans:constructor-arg value="d:/upload"/>
+	</beans:bean>
+===========================================================================================
 		<!-- MultipartHttpServletRequset -->
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>

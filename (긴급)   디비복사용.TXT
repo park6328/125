@@ -1,3 +1,23 @@
+	<bean id="student" class="edu.bit.ex.Student" >
+		<property name="name" value="홍길동" />
+		<property name="age" value="10" />
+	</bean>
+	
+	<bean id="worker" class="edu.bit.ex.Worker" >
+		<property name="name" value="홍길순" />
+		<property name="age" value="35" />
+		<property name="job" value="개발자" />
+	</bean>
+	
+	<bean id="logAop" class="edu.bit.ex.LogAop" />
+		
+	<aop:config>
+		<aop:aspect id="logger" ref="logAop">
+			<aop:pointcut id="publicM" expression="within(edu.bit.ex.Student)"/>
+			<aop:around pointcut-ref="publicM" method="loggerAop" />
+		</aop:aspect>
+	</aop:config>
+		===============================================================================
 		public Object loggerAop(ProceedingJoinPoint joinpoint) throws Throwable {
 		String signatureStr = joinpoint.getSignature().toShortString();
 		System.out.println( signatureStr + " is start.");

@@ -1,3 +1,17 @@
+	$(document).ready(function(){
+    $("#job_id").on("change", function(){
+    	
+    	var val = $(this).val();
+    	
+     	var pre = $("#aaa").attr("href");
+    	
+     	console.log(pre.toString()  + val.toString());     	 
+     	$("#aaa").attr("href",pre.toString()  + val.toString());     	
+        console.log($(this).val());
+       
+    });
+});
+	
 	<bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="core.log.jdbc.driver.OracleDriver" />
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:XE" />

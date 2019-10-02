@@ -1,0 +1,42 @@
+all in one 사용법
+
+1.스캇에 view 권한을 부여함
+GRANT create view TO scott;
+commit;
+
+※참고
+
+스프링프레임워크를 로드하는 방식이 WebApplicationInitializer 방식으로 변경되었습니다. 
+현재 all-in-one 템플릿은 egovframework.com.cmm.config.EgovWebApplicationInitializer 파일에서 설정이 가능하지만, 
+하이브리드 방식으로 설정 클래스에서 기존의 xml 설정파일을 부르는 방식입니다. 
+주기능은 globals.properties 파일에서 "Globals.Auth" 값으로 권한처리를 session을 사용할지 spring security 를 사용할지 분리할 수 있도록 하는것인것 
+같습니다.
+
+
+script 폴더에 있는 ddl,dml,comment 3개의 sql을 처리.
+
+
+권한관련 인터페이스 : EgovUserDetailsService
+
+public interface EgovUserDetailsService {
+
+	/**
+	 * 인증된 사용자객체를 VO형식으로 가져온다.
+	 * @return Object - 사용자 ValueObject
+	 */
+	public Object getAuthenticatedUser();
+
+	/**
+	 * 인증된 사용자의 권한 정보를 가져온다.
+	 * 예) [ROLE_ADMIN, ROLE_USER, ROLE_A, ROLE_B, ROLE_RESTRICTED, IS_AUTHENTICATED_FULLY, IS_AUTHENTICATED_REMEMBERED, IS_AUTHENTICATED_ANONYMOUSLY]
+	 * @return List - 사용자 권한정보 목록
+	 */
+	public List<String> getAuthorities();
+	
+	/**
+	 * 인증된 사용자 여부를 체크한다.
+	 * @return Boolean - 인증된 사용자 여부(TRUE / FALSE)	
+	 */
+	public Boolean isAuthenticated(); 
+
+}

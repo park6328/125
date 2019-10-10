@@ -32,6 +32,7 @@ $(document).ready(function(){
      	$("#aaa").attr("href",pre.toString()  + val.toString());     	
         console.log($(this).val());
        
+       
     });
 });
 	
